@@ -37,10 +37,14 @@ def main():
         print("Error: mileage must be an integer")
         sys.exit(1)
 
-    with open("theta.json", "r") as f:
-        theta = json.load(f)
-        theta0 = theta["theta0"]
-        theta1 = theta["theta1"]
+    try:
+        with open("theta.json", "r") as f:
+            theta = json.load(f)
+            theta0 = theta["theta0"]
+            theta1 = theta["theta1"]
+    except FileNotFoundError:
+        theta0 = 0
+        theta1 = 0
 
     mileage, price = load_data("data.csv")
 
