@@ -7,7 +7,6 @@
 - [Installation](#installation)
 - [Features](#features)
 - [Usage](#usage)
-- [Examples](#examples)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -33,13 +32,6 @@ pip install -r requirements.txt
 ## Usage
 
 To run the model and make predictions, execute the main script:
-
-```bash
-python main.py
-```
-
-## Examples
-
 Here's how to run the script to train the model and predict car prices:
 
 1. Train the model with provided dataset:
@@ -51,10 +43,8 @@ python train.py
 2. Predict the price for a car with specific mileage:
 
 ```bash
-python predict.py 100000
+python predict.py
 ```
-
-This command predicts the price of a car with 100,000 miles.
 
 ## Contributing
 
@@ -63,6 +53,3 @@ Contributions to `ft_linear_regression` are welcome. If you have suggestions or 
 ## License
 
 This project is licensed under the MIT License - see the `LICENSE` file in the repository for details.
-```
-
-Please make sure to include any additional scripts or dependencies in your repository or note them down to update the README accordingly. Adjust the commands or add more detailed examples as needed for your specific setup!
